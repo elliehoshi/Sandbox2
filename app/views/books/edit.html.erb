@@ -1,0 +1,37 @@
+<h1> Editing Book </h1>
+
+<%= form_for @book do |f| %>
+<div class="field">
+<%= f.label :book_title %>
+<%= f.text_field :title %>
+</div>
+
+<div class="author">
+<%= f.label :book_author %>
+<%= f.text_field :author %>
+</div>
+
+<div class="publication_year">
+<%= f.label :book_publication_year %>
+<%= f.text_field :publication_year %>
+</div>
+
+<div class="isbn">
+<%= f.label :book_isbn %>
+<%= f.text_field :isbn %>
+</div>
+
+<div class="genre">
+<%= f.label :book_genre %>
+<%= f.text_field :genre %>
+</div>
+
+<div class="submit">
+<%= f.submit "Save Edit"%>
+</div>
+
+
+<%= link_to 'Show', @book %> |
+<%= link_to 'Back', books_path %>
+
+<% end %>

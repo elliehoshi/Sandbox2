@@ -4,6 +4,9 @@ Library::Application.routes.draw do
   get 'books/new' => 'books#new'
   post 'books' => 'books#create'
   get 'book/:id' => 'book#show'
+  # get 'books/:id/edit' => 'book#edit'
+  post 'books/:id/edit' => 'books#edit'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
